@@ -396,6 +396,11 @@ h3, .h3 {
   h3, .h3 {
     font-size: calc(1.3rem + 0.6vw) ;
   }
+
+  iframe {
+    width: 100%;
+    height: 56.25vw; /* 100 * (9/16) */
+}
 }
 
 h4, .h4 {
