@@ -28,6 +28,5 @@ document.querySelectorAll(".footer-nav a").forEach((anchor) => {
 });
 
 function scrollToSection() {
-  const section = document.getElementById("tentang-kami");
-  section.scrollIntoView({ behavior: "smooth" });
+  document.querySelector("#tentang-kami").scrollIntoView({ behavior: "smooth" });
 }
