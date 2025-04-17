@@ -37,7 +37,7 @@
       <section class="hero">
         <p><i>Build Country Together with</i></p>
         <h1>Daha Borepile</h1>
-        <button class="cta-btn">Get started</button>
+        <button class="cta-btn" onclick="scrollToSection()">Get started</button>
       </section>
     </header>
     <section class="tentang-kami" id="tentang-kami">
@@ -74,7 +74,7 @@
             <img src="img/2.jpg" alt="Bore Pile" style="width: 100%; height: 250px; object-fit: cover" />
             <div style="padding: 20px; text-align: left">
               <h3 style="margin: 0 0 10px">Bore pile</h3>
-              <a href="#" style="color: #007bff">See More ›</a>
+              <a href="javascript:void(0)" onclick="openModal('modal1')" style="color: #007bff">See More ›</a>
             </div>
           </div>
 
@@ -83,7 +83,7 @@
             <img src="img/37.jpg" alt="Bore Sumur Dalam" style="width: 100%; height: 250px; object-fit: cover" />
             <div style="padding: 20px; text-align: left">
               <h3 style="margin: 0 0 10px">Bore Sumur Dalam</h3>
-              <a href="#" style="color: #007bff">See More ›</a>
+              <a href="javascript:void(0)" onclick="openModal('modal2')" style="color: #007bff">See More ›</a>
             </div>
           </div>
 
@@ -92,7 +92,7 @@
             <img src="img/44.jpg" alt="Konstruksi Bangunan" style="width: 100%; height: 250px; object-fit: cover" />
             <div style="padding: 20px; text-align: left">
               <h3 style="margin: 0 0 10px">Konstruksi Bangunan</h3>
-              <a href="#" style="color: #007bff">See More ›</a>
+              <a href="javascript:void(0)" onclick="openModal('modal3')" style="color: #007bff">See More ›</a>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@
         </div>
         <div class="text-content">
           <h2>Pengerjaan pondasi Borepile RS PKU Temanggung</h2>
-          <p>Proses pengerjaan pondasi Borepile RS PKU Temanggung dengan menggunakan alat sany SR155 mampu dalam borepile.</p>
+          <p>Proses pengerjaan pondasi Borepile RS PKU Temanggung dengan menggunakan alat sany SR155 milik daha borepile.</p>
           <button class="learn-more-btn" onclick="handleLearnMore()">Learn More</button>
         </div>
       </div>
@@ -135,8 +135,26 @@
         <div class="contact-info" id="kontak">
           <h2>Kontak Kami</h2>
           <p><strong>📍 Alamat:</strong> Jl. Nangsri - Kaling Km.5 Tawang RT. 01/RW.01, Macanan Kebakkramat Karanganyar 57762</p>
-          <p><strong>📞 Telepon:</strong> <a href="tel:+6281234354300">0812-3435-4300</a></p>
-          <p><strong>📧 Email:</strong> <a href="mailto:dahaborepile@gmail.com">dahaborepile@gmail.com</a></p>
+          <p>
+            <strong>📞 Telepon:</strong> <a href="tel:+6281234354300">0812-3435-4300</a> / <a href="tel:+6281227180807">0812-2718-0807</a> /
+            <a href="tel:+6287835544157">0878-3554-4157</a>
+          </p>
+          <p>
+            <strong>📧 Email:</strong>
+            <a href="mailto:dahaborepile@gmail.com">dahaborepile@gmail.com</a>
+          </p>
+          <p><strong>🌐 Media Sosial:</strong></p>
+          <ul style="list-style: none; padding: 0; display: flex; gap: 15px">
+            <li>
+              <a href="https://www.instagram.com/cvdahaborepile" target="_blank">📷 Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@cv.daha.borepile" target="_blank">🎵 TikTok</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/CVDAHABOREPILE" target="_blank">📘 Facebook</a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -169,6 +187,60 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img src="img/38.jpg" alt="Bore Sumur Dalam" style="width: 100%; border-radius: 6px; margin-bottom: 15px" />
+        <h2>Bore pile</h2>
+        <p>
+          Bore pile adalah metode pondasi dalam yang dilakukan dengan cara mengebor tanah terlebih dahulu, kemudian mengisi lubang dengan tulangan dan beton. Teknik ini sangat cocok untuk bangunan bertingkat, jembatan, dan proyek besar
+          lainnya karena memberikan daya dukung tinggi serta minim getaran. Daha Borepile menyediakan jasa bore pile profesional dengan peralatan modern dan tim berpengalaman, memastikan kestabilan dan kekuatan struktur bangunan Anda.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img src="img/39.jpg" alt="Bore Sumur Dalam" style="width: 100%; border-radius: 6px; margin-bottom: 15px" />
+        <h2>Bore Sumur Dalam</h2>
+        <p>
+          Bore sumur dalam adalah proses pengeboran tanah hingga kedalaman tertentu untuk mendapatkan sumber air tanah bersih yang stabil dan berlimpah. Teknik ini biasanya digunakan untuk kebutuhan rumah tangga, industri, hingga pertanian.
+          Daha Borepile melayani pembuatan bore sumur dalam di berbagai wilayah dengan teknologi pengeboran presisi tinggi, menghasilkan sumur air yang awet dan berkualitas.
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="modal3">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img src="img/43.jpg" alt="Bore Sumur Dalam" style="width: 100%; border-radius: 6px; margin-bottom: 15px" />
+        <h2>Konstruksi Bangunan</h2>
+        <p>
+          Konstruksi bangunan adalah proses perencanaan dan pembangunan struktur fisik seperti rumah, gedung, atau infrastruktur lainnya. Proyek konstruksi membutuhkan pondasi yang kuat, material berkualitas, dan tenaga ahli di bidangnya.
+          Sebagai penyedia layanan pondasi dan pengeboran terpercaya, Daha Borepile juga mendukung berbagai proyek konstruksi bangunan mulai dari pondasi awal hingga struktur penunjang lainnya dengan standar mutu tinggi.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function openModal(id) {
+        document.getElementById(id).style.display = "block";
+      }
+
+      function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+      }
+
+      // Tutup modal jika klik di luar modal
+      window.onclick = function (event) {
+        const modals = document.querySelectorAll(".modal");
+        modals.forEach((modal) => {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        });
+      };
+    </script>
 
     <script>
       function updateNavbarBackground() {
